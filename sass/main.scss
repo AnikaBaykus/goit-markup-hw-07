@@ -4,31 +4,14 @@
 
 /* ==========Общие Стили========== */
 
-:root {
-  --main-text-color: #212121;
-  --secondary-text-color: #757575;
-  --accent-text-color: #2196f3;
-  --contacts-text-color: rgba(255, 255, 255, 0.6);
-  --page-color: #fff;
-  --page-color-dark: #000000;
-  --footer-color: #2f303a;
-  --secondary-color: #f5f4fa;
-  --border-color: rgba(238, 238, 238, 1);
-  --bg-color-caption: #c4c4c4;
-  --icon-color: #afb1b8;
-  --icon-bg-footer: rgba(255, 255, 255, 0.1);
-  --backdrop-color: rgba(0, 0, 0, 0.2);
-  --smooth-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
 
-  background-color: var(--page-color);
-  color: var(--main-text-color);
+  background-color: $pageColor;
+  color: $mainTextColor;
 }
 
 .list {
@@ -62,15 +45,15 @@ p {
   line-height: 1.19;
   text-decoration: none;
 
-  color: var(--accent-text-color);
+  color: $accentColor;
 }
 
 .logo .dark {
-  color: var(--page-color-dark);
+  color: $accentSecondaryColor;
 }
 
 .logo .light {
-  color: var(--page-color);
+  color: $pageColor;
 }
 
 /* ---Навигация по сайту--- */
@@ -106,17 +89,17 @@ p {
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  color: var(--main-text-color);
-  transition: color var(--smooth-transition);
+  color: $mainTextColor;
+  transition: color $smoothTransition;
 }
 
 .site-nav .link.current {
-  color: var(--accent-text-color);
+  color: $accentColor;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent-text-color);
+  color: $accentColor;
 }
 
 .site-nav .link::after {
@@ -130,7 +113,7 @@ p {
   width: 100%;
   height: 4px;
 
-  background-color: var(--accent-text-color);
+  background-color: $accentColor;
   border-radius: 2px;
   opacity: 0;
 }
@@ -160,13 +143,13 @@ p {
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  color: var(--secondary-text-color);
-  transition: color var(--smooth-transition);
+  color: $secondaryTextColor;
+  transition: color $smoothTransition;
 }
 
 .contacts-header .link:hover,
 .contacts-header .link:focus {
-  color: var(--accent-text-color);
+  color: $accentColor;
 }
 .nav-icon {
   justify-content: center;
@@ -208,7 +191,7 @@ p {
   text-decoration: none;
   font-style: normal;
 
-  color: var(--page-color);
+  color: $pageColor;
 }
 
 .contacts-footer .link {
@@ -217,8 +200,8 @@ p {
   line-height: 1.71;
   text-decoration: none;
 
-  color: var(--contacts-text-color);
-  transition: color var(--smooth-transition);
+  color: $contactsTextColor;
+  transition: color $smoothTransition;
 }
 
 .contacts-footer li:not(:last-child) {
@@ -227,7 +210,7 @@ p {
 
 .contacts-footer .link:hover,
 .contacts-footer .link:focus {
-  color: var(--accent-text-color);
+  color: $accentColor;
 }
 
 .button {
@@ -253,7 +236,7 @@ p {
   text-align: center;
 }
 .header {
-  background-color: var(--page-color);
+  background-color: $pageColor;
   border-bottom: 1px solid #ececec;
 }
 
@@ -261,7 +244,7 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: var(--footer-color);
+  background-color: $footerColor;
 }
 
 .footer-wrap {
@@ -285,7 +268,7 @@ p {
   font-size: 14px;
   text-transform: uppercase;
 
-  color: var(--page-color);
+  color: $pageColor;
 }
 
 .footer-icons-list {
@@ -308,15 +291,15 @@ p {
   width: 44px;
   height: 44px;
 
-  background-color: var(--icon-bg-footer);
-  fill: var(--page-color);
+  background-color: $iconFooterColor;
+  fill: $pageColor;
   border-radius: 50%;
-  transition: background-color var(--smooth-transition);
+  transition: background-color $smoothTransition;
 }
 
 .footer-icons:hover,
 .footer-icons:focus {
-  background-color: var(--accent-text-color);
+  background-color: $accentColor;
 }
 
 .footer-icons svg {
@@ -341,16 +324,16 @@ p {
 
   font-size: 16px;
   line-height: 1.25;
-  color: var(--contacts-text-color);
+  color: $contactsTextColor;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid $borderInputColor;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
   border-radius: 4px;
 }
 
 .input-footer::placeholder {
-  color: var(--contacts-text-color);
+  color: $contactsTextColor;
 }
 
 .btn-footer {
@@ -364,10 +347,10 @@ p {
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  color: var(--page-color);
-  fill: var(--page-color);
-  background-color: var(--accent-text-color);
-  border-color: var(--accent-text-color);
+  color: $pageColor;
+  fill: $pageColor;
+  background-color: $accentColor;
+  border-color: $accentColor;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
@@ -405,11 +388,11 @@ p {
   max-width: 1600px;
   padding: 200px 0px;
 
-  background-color: var(--bg-color-caption);
+  background-color: $captionColor;
   background-image: linear-gradient(
       to top,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
+      $gradientCaptionColor,
+      $gradientCaptionColor
     ),
     url('../img/caption.jpg');
   background-repeat: no-repeat;
@@ -431,7 +414,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.06em;
 
-  color: var(--page-color);
+  color: $pageColor;
 }
 
 /* Главная кнопка */
@@ -444,9 +427,9 @@ p {
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  color: var(--page-color);
-  background-color: var(--accent-text-color);
-  border-color: var(--accent-text-color);
+  color: $pageColor;
+  background-color: $accentColor;
+  border-color: $accentColor;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
@@ -472,7 +455,7 @@ p {
   width: 270px;
   height: 120px;
 
-  background-color: var(--secondary-color);
+  background-color: $pageSecondaryColor;
   border-radius: 4px;
 }
 .about-img {
@@ -490,7 +473,7 @@ p {
 .about-text {
   line-height: 1.71;
 
-  color: var(--secondary-text-color);
+  color: $secondaryTextColor;
 }
 /* ---Чем мы занимаемся--- */
 .job ul {
@@ -520,13 +503,13 @@ p {
   text-align: center;
   text-transform: uppercase;
 
-  color: var(--page-color);
-  background-color: rgba(47, 48, 58, 0.8);
+  color: $pageColor;
+  background-color: $decorJobColor;
 }
 
 /* ---Наша команда--- */
 .team {
-  background-color: var(--secondary-color);
+  background-color: $pageSecondaryColor;
 }
 
 .team ul {
@@ -537,7 +520,7 @@ p {
 .team-window {
   width: 270px;
 
-  background-color: var(--page-color);
+  background-color: $pageColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -570,7 +553,7 @@ p {
   line-height: 1.19;
   text-align: center;
 
-  color: var(--secondary-text-color);
+  color: $secondaryTextColor;
 }
 
 .icons-list {
@@ -592,17 +575,16 @@ p {
   width: 100%;
   height: 100%;
 
-  background-color: var(--page-color);
-  fill: var(--icon-color);
+  background-color: $pageColor;
+  fill: $iconColor;
   border-radius: 50%;
-  transition: fill var(--smooth-transition),
-    background-color var(--smooth-transition);
+  transition: fill $smoothTransition, background-color $smoothTransition;
 }
 
 .social-icons:hover,
 .social-icons:focus {
-  background-color: var(--accent-text-color);
-  fill: var(--page-color);
+  background-color: $accentColor;
+  fill: $pageColor;
 }
 
 .social-icons svg {
@@ -628,18 +610,18 @@ p {
   width: 100%;
   height: 100%;
 
-  background-color: var(--page-color);
-  fill: var(--icon-color);
-  border: 1px solid var(--icon-color);
+  background-color: $pageColor;
+  fill: $iconColor;
+  border: 1px solid $iconColor;
   border-radius: 4px;
 
-  transition: fill var(--smooth-transition), border var(--smooth-transition);
+  transition: fill $smoothTransition, border $smoothTransition;
 }
 
 .clients-icon:hover,
 .clients-icon:focus {
-  border-color: var(--accent-text-color);
-  fill: var(--accent-text-color);
+  border-color: $accentColor;
+  fill: $accentColor;
 }
 
 /* ========/index.html======== */
@@ -666,20 +648,19 @@ p {
   font-size: 16px;
   line-height: 1.63;
 
-  color: var(--main-text-color);
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
+  color: $mainTextColor;
+  background-color: $pageSecondaryColor;
+  border-color: $pageSecondaryColor;
   cursor: pointer;
-  transition: color var(--smooth-transition),
-    background-color var(--smooth-transition),
-    border-color var(--smooth-transition), box-shadow var(--smooth-transition);
+  transition: color $smoothTransition, background-color $smoothTransition,
+    border-color $smoothTransition, box-shadow $smoothTransition;
 }
 
 .product .button:hover,
 .product .button:focus {
-  color: var(--page-color);
-  background-color: var(--accent-text-color);
-  border-color: var(--accent-text-color);
+  color: $pageColor;
+  background-color: $accentColor;
+  border-color: $accentColor;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -696,8 +677,8 @@ p {
   margin-top: 30px;
   width: 370px;
 
-  background-color: var(--page-color);
-  outline-color: var(--border-color);
+  background-color: $pageColor;
+  outline-color: $borderColor;
   outline-width: 1px;
   outline-style: solid;
 }
@@ -711,7 +692,7 @@ p {
 }
 
 .product-window .link {
-  transition: box-shadow var(--smooth-transition);
+  transition: box-shadow $smoothTransition;
 }
 
 .product-window .link:hover,
@@ -743,9 +724,9 @@ p {
   font-size: 18px;
   line-height: 1.56;
 
-  color: var(--page-color);
-  background-color: rgba(33, 150, 243, 0.9);
-  transition: transform var(--smooth-transition);
+  color: $pageColor;
+  background-color: $decorCardColor;
+  transition: transform $smoothTransition;
   transform: translateY(0);
 }
 
@@ -767,7 +748,7 @@ p {
 .product .link {
   text-decoration: none;
 
-  color: var(--main-text-color);
+  color: $mainTextColor;
 }
 
 .product-text {
@@ -783,7 +764,7 @@ p {
   font-size: 16px;
   line-height: 1.87;
 
-  color: var(--secondary-text-color);
+  color: $secondaryTextColor;
 }
 /* =======/portfolio.html====== */
 /* ==========Модальное окно======= */
@@ -797,7 +778,7 @@ p {
   width: 100%;
   height: 100%;
 
-  background-color: var(--backdrop-color);
+  background-color: $backdropColor;
 }
 
 .backdrop.is-hidden {
@@ -815,7 +796,7 @@ p {
   height: 581px;
   padding: 40px;
 
-  background-color: var(--page-color);
+  background-color: $pageColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -833,10 +814,10 @@ p {
   height: 30px;
 
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--page-color);
-  fill: var(--page-color-dark);
-  transition: fill var(--smooth-transition);
+  border: 1px solid $borderIconOffColor;
+  background-color: $pageColor;
+  fill: $accentSecondaryColor;
+  transition: fill $smoothTransition;
 }
 .icon-off svg {
   width: 11px;
@@ -845,7 +826,7 @@ p {
 
 .icon-off:hover,
 .icon-off:focus {
-  fill: var(--accent-text-color);
+  fill: $accentColor;
 }
 
 .modal-title {
@@ -866,7 +847,7 @@ p {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--secondary-text-color);
+  color: $secondaryTextColor;
 }
 
 .modal-label:nth-child(-n + 3) {
@@ -884,11 +865,11 @@ p {
   margin-top: 4px;
   padding: 11px 12px 11px 42px;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid $borderModalInput;
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
-  transition: border-color var(--smooth-transition);
+  transition: border-color $smoothTransition;
 }
 
 .icon-input svg {
@@ -898,8 +879,8 @@ p {
 
   width: 18px;
   height: 18px;
-  fill: var(--page-color-dark);
-  transition: fill var(--smooth-transition);
+  fill: $accentSecondaryColor;
+  transition: fill $smoothTransition;
 }
 
 .modal-textarea {
@@ -910,35 +891,35 @@ p {
   padding: 12px 16px;
 
   resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid $borderModalInput;
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
-  transition: border-color var(--smooth-transition);
+  transition: border-color $smoothTransition;
 }
 
 .modal-textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+  color: $placeholderColor;
 }
 
 .modal-label:focus-within svg {
-  fill: var(--accent-text-color);
+  fill: $accentColor;
 }
 
 .modal-input:focus-within,
 .modal-textarea:focus-within {
-  border: 1px solid var(--accent-text-color);
+  border: 1px solid $accentColor;
 }
 
 .modal-input:hover,
 .modal-input:focus,
 .modal-textarea:hover,
 .modal-textarea:focus {
-  border: 1px solid var(--accent-text-color);
+  border: 1px solid $accentColor;
 }
 .modal-input:hover ~ .icon-input svg,
 .modal-input:focus ~ .icon-input svg {
-  fill: var(--accent-text-color);
+  fill: $accentColor;
 }
 
 .modal-terms {
@@ -947,13 +928,13 @@ p {
   margin-bottom: 30px;
 
   line-height: 1.71;
-  color: var(--secondary-text-color);
+  color: $secondaryTextColor;
 }
 
 .modal-terms a {
   padding-left: 4px;
 
-  color: var(--accent-text-color);
+  color: $accentColor;
 }
 
 .standart-checkbox {
@@ -977,22 +958,21 @@ p {
 
   border: 2px solid;
   border-radius: 2px;
-  border-color: var(--main-text-color);
-  background-color: var(--page-color);
-  transition: background-color var(--smooth-transition),
-    border-color var(--smooth-transition);
+  border-color: $mainTextColor;
+  background-color: $pageColor;
+  transition: background-color $smoothTransition, border-color $smoothTransition;
 }
 
 .standart-checkbox:checked + .modal-terms::before {
-  background-color: var(--accent-text-color);
-  border-color: var(--accent-text-color);
+  background-color: $accentColor;
+  border-color: $accentColor;
   background-image: url('../img/icon-check.svg');
-  color: var(--page-color);
+  color: $pageColor;
   background-origin: border-box;
 }
 
 .standart-checkbox:focus + .modal-terms::before {
-  outline: 1px solid var(--page-color-dark);
+  outline: 1px solid $accentSecondaryColor;
 }
 
 .btn-in-modal {
@@ -1006,9 +986,9 @@ p {
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  color: var(--page-color);
-  background-color: var(--accent-text-color);
-  border-color: var(--accent-text-color);
+  color: $pageColor;
+  background-color: $accentColor;
+  border-color: $accentColor;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
