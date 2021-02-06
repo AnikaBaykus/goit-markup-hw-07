@@ -38,3 +38,73 @@
   height: 24px;
   margin-left: 10px;
 }
+
+.product .button {
+  display: block;
+  padding: 6px 22px;
+  min-width: 73px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  color: $mainTextColor;
+  background-color: $pageSecondaryColor;
+  border-color: $pageSecondaryColor;
+  cursor: pointer;
+  transition: color $smoothTransition, background-color $smoothTransition,
+    border-color $smoothTransition, box-shadow $smoothTransition;
+}
+
+.product .button:hover,
+.product .button:focus {
+  color: $pageColor;
+  background-color: $accentColor;
+  border-color: $accentColor;
+  box-shadow: $shadowButtonMenu;
+}
+
+.btn-in-modal {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: $pageColor;
+  background-color: $accentColor;
+  border-color: $accentColor;
+  box-shadow: $shadowColor;
+  cursor: pointer;
+}
+
+.icon-off {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid $borderIconOffColor;
+  background-color: $pageColor;
+  fill: $accentSecondaryColor;
+  transition: fill $smoothTransition;
+}
+.icon-off svg {
+  width: 11px;
+  height: 11px;
+}
+
+.icon-off:hover,
+.icon-off:focus {
+  fill: $accentColor;
+}

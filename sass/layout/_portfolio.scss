@@ -1,0 +1,16 @@
+.product-menu {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-button:not(:first-child) {
+  margin-left: 8px;
+}
+
+/* Портфолио продукты */
+
+.product-items {
+  display: flex;
+  flex-wrap: wrap;
+}

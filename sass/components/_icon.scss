@@ -1,0 +1,90 @@
+.clients-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+
+  background-color: $pageColor;
+  fill: $iconColor;
+  border: 1px solid $iconColor;
+  border-radius: 4px;
+
+  transition: fill $smoothTransition, border $smoothTransition;
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  border-color: $accentColor;
+  fill: $accentColor;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+
+  background-color: $pageColor;
+  fill: $iconColor;
+  border-radius: 50%;
+  transition: fill $smoothTransition, background-color $smoothTransition;
+}
+
+.social-icons:hover,
+.social-icons:focus {
+  background-color: $accentColor;
+  fill: $pageColor;
+}
+
+.social-icons svg {
+  width: 20px;
+  height: 20px;
+}
+
+.about-icons {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+
+  background-color: $pageSecondaryColor;
+  border-radius: 4px;
+}
+.about-img {
+  width: 70px;
+  height: 70px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 44px;
+  height: 44px;
+
+  background-color: $iconFooterColor;
+  fill: $pageColor;
+  border-radius: 50%;
+  transition: background-color $smoothTransition;
+}
+
+.footer-icons:hover,
+.footer-icons:focus {
+  background-color: $accentColor;
+}
+
+.footer-icons svg {
+  width: 20px;
+  height: 20px;
+}
