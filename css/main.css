@@ -331,11 +331,6 @@ p {
   color: #fff;
 }
 
-.footer .logo {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
 .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -384,12 +379,7 @@ p {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link.current {
-  color: #2196f3;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link.current, .site-nav .link:hover, .site-nav .link:focus {
   color: #2196f3;
 }
 
@@ -443,52 +433,8 @@ p {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-header .link:hover,
-.contacts-header .link:focus {
+.contacts-header .link:hover, .contacts-header .link:focus {
   color: #2196f3;
-}
-
-.nav-icon {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 32px;
-  fill: currentColor;
-}
-
-.mail-icon svg {
-  width: 16px;
-  height: 12px;
-}
-
-.tel-icon svg {
-  width: 10px;
-  height: 16px;
-}
-
-.mail-icon,
-.tel-icon {
-  padding-right: 10px;
-}
-
-.map {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 9px;
-}
-
-.map .link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  line-height: 1.71;
-  text-decoration: none;
-  font-style: normal;
-  color: #fff;
 }
 
 .contacts-footer .link {
@@ -503,13 +449,26 @@ p {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-footer li:not(:last-child) {
+.contacts-footer .link:hover, .contacts-footer .link:focus {
+  color: #2196f3;
+}
+
+.contacts-footer .link li:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.contacts-footer .link:hover,
-.contacts-footer .link:focus {
-  color: #2196f3;
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 9px;
+}
+
+.map .link {
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+  color: #fff;
 }
 
 .caption .button {
@@ -557,82 +516,30 @@ p {
   margin-left: 10px;
 }
 
-.product .button {
-  display: block;
-  padding: 6px 22px;
-  min-width: 73px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  color: #212121;
-  background-color: #f5f4fa;
-  border-color: #f5f4fa;
-  cursor: pointer;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.mail-icon svg {
+  width: 16px;
+  height: 12px;
 }
 
-.product .button:hover,
-.product .button:focus {
-  color: #fff;
-  background-color: #2196f3;
-  border-color: #2196f3;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.tel-icon svg {
+  width: 10px;
+  height: 16px;
 }
 
-.btn-in-modal {
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: #fff;
-  background-color: #2196f3;
-  border-color: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+.mail-icon,
+.tel-icon {
+  padding-right: 10px;
 }
 
-.icon-off {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.nav-icon {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  fill: #000000;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-off svg {
-  width: 11px;
-  height: 11px;
-}
-
-.icon-off:hover,
-.icon-off:focus {
-  fill: #2196f3;
+  padding-bottom: 32px;
+  fill: currentColor;
 }
 
 .clients-icon {
@@ -950,6 +857,57 @@ p {
   text-align: center;
 }
 
+.icon-off {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  fill: #000000;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-off svg {
+  width: 11px;
+  height: 11px;
+}
+
+.icon-off:hover,
+.icon-off:focus {
+  fill: #2196f3;
+}
+
+.btn-in-modal {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background-color: #2196f3;
+  border-color: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
 .modal-terms {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1191,6 +1149,11 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .footer-wrap {

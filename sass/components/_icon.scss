@@ -1,3 +1,26 @@
+.mail-icon svg {
+  width: 16px;
+  height: 12px;
+}
+
+.tel-icon svg {
+  width: 10px;
+  height: 16px;
+}
+
+.mail-icon,
+.tel-icon {
+  padding-right: 10px;
+}
+
+.nav-icon {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 32px;
+
+  fill: currentColor;
+}
+
 .clients-icon {
   display: flex;
   align-items: center;
