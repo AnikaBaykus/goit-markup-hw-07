@@ -2,11 +2,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  height: 252px;
   background-color: $footerColor;
-}
-.footer .logo {
-  display: inline-block;
-  margin-bottom: 20px;
+  .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
 }
 
 .footer-wrap {

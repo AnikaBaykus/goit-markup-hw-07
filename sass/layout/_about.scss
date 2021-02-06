@@ -4,10 +4,10 @@
 }
 .about-item {
   width: 270px;
-}
 
-.about-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about-title {

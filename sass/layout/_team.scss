@@ -1,10 +1,9 @@
 .team {
   background-color: $pageSecondaryColor;
-}
-
-.team ul {
-  display: flex;
-  justify-content: space-between;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .social-item {
