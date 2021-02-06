@@ -1,0 +1,24 @@
+.btn-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: $pageColor;
+  fill: $pageColor;
+  background-color: $accentColor;
+  border-color: $accentColor;
+  box-shadow: $shadowColor;
+  cursor: pointer;
+}
+
+.btn-icon-footer {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

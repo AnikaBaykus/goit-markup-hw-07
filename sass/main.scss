@@ -2,6 +2,8 @@
 
 @import './base/normalize';
 
+@import "./components/buttons";
+
 /* ==========Общие Стили========== */
 
 body {
@@ -26,6 +28,20 @@ h2,
 h3,
 p {
   margin: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 0;
+
+  font-family: inherit;
+  text-decoration: none;
+  text-align: center;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: inherit;
+  background-color: transparent;
 }
 
 .visually-hidden {
@@ -213,20 +229,6 @@ p {
   color: $accentColor;
 }
 
-.button {
-  display: inline-block;
-  padding: 0;
-
-  font-family: inherit;
-  text-decoration: none;
-  text-align: center;
-
-  border: 1px solid transparent;
-  border-radius: 4px;
-  color: inherit;
-  background-color: transparent;
-}
-
 .title {
   margin-bottom: 50px;
 
@@ -327,38 +329,13 @@ p {
   color: $contactsTextColor;
 
   border: 1px solid $borderInputColor;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow($shadowColor);
   background-color: transparent;
   border-radius: 4px;
 }
 
 .input-footer::placeholder {
   color: $contactsTextColor;
-}
-
-.btn-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 200px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  color: $pageColor;
-  fill: $pageColor;
-  background-color: $accentColor;
-  border-color: $accentColor;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-}
-
-.btn-icon-footer {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
 }
 
 .container {
@@ -430,7 +407,7 @@ p {
   color: $pageColor;
   background-color: $accentColor;
   border-color: $accentColor;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: $shadowColor;
   cursor: pointer;
 }
 
@@ -521,8 +498,7 @@ p {
   width: 270px;
 
   background-color: $pageColor;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: $shadowModal;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -661,8 +637,7 @@ p {
   color: $pageColor;
   background-color: $accentColor;
   border-color: $accentColor;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: $shadowButtonMenu;
 }
 /* Портфолио продукты */
 
@@ -697,8 +672,7 @@ p {
 
 .product-window .link:hover,
 .product-window .link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: $shadowCard;
 }
 
 .product-box {
@@ -797,8 +771,7 @@ p {
   padding: 40px;
 
   background-color: $pageColor;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: $shadowModal;
   border-radius: 4px;
 }
 
@@ -989,7 +962,7 @@ p {
   color: $pageColor;
   background-color: $accentColor;
   border-color: $accentColor;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: $shadowColor;
   cursor: pointer;
 }
 /* ==========/Модальное окно======= */
