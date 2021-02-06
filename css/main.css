@@ -932,16 +932,6 @@ p {
   color: #2196f3;
 }
 
-.standart-checkbox {
-  width: 0px;
-  height: 0px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .modal-terms::before {
   content: '';
   display: inline-block;
@@ -956,6 +946,16 @@ p {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.standart-checkbox {
+  width: 0px;
+  height: 0px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .standart-checkbox:checked + .modal-terms::before {
@@ -1015,6 +1015,11 @@ p {
   height: 44px;
 }
 
+.product .link {
+  text-decoration: none;
+  color: #212121;
+}
+
 .product-window {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1044,10 +1049,16 @@ p {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-window .link:hover,
-.product-window .link:focus {
+.product-window .link:hover, .product-window .link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.product-window .link:hover .product-info,
+.product-window .link:focus .product-info {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .product-box {
@@ -1085,13 +1096,6 @@ p {
           transform: translateY(0);
 }
 
-.link:hover .product-info,
-.link:focus .product-info {
-  -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-          transform: translateY(-100%);
-}
-
 .product-image {
   display: block;
   max-width: 100%;
@@ -1101,11 +1105,6 @@ p {
 .product-item {
   padding: 20px 24px;
   max-width: 370px;
-}
-
-.product .link {
-  text-decoration: none;
-  color: #212121;
 }
 
 .product-text {

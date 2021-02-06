@@ -1,3 +1,4 @@
+// cardsTeam
 .team-window {
   width: 270px;
 
@@ -42,6 +43,14 @@
   height: 44px;
 }
 
+// cardsTeam
+// cardsPortfolio
+
+.product .link {
+  text-decoration: none;
+  color: $mainTextColor;
+}
+
 .product-window {
   display: flex;
   margin-right: 30px;
@@ -52,23 +61,28 @@
   outline-color: $borderColor;
   outline-width: 1px;
   outline-style: solid;
-}
 
-.product-window:nth-child(3n) {
-  margin-right: 0px;
-}
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
 
-.product-window:nth-child(-n + 3) {
-  margin-top: 0;
+  &:nth-child(-n + 3) {
+    margin-top: 0;
+  }
 }
 
 .product-window .link {
   transition: box-shadow $smoothTransition;
-}
 
-.product-window .link:hover,
-.product-window .link:focus {
-  box-shadow: $shadowCard;
+  &:hover,
+  &:focus {
+    box-shadow: $shadowCard;
+  }
+
+  &:hover .product-info,
+  &:focus .product-info {
+    transform: translateY(-100%);
+  }
 }
 
 .product-box {
@@ -100,11 +114,6 @@
   transform: translateY(0);
 }
 
-.link:hover .product-info,
-.link:focus .product-info {
-  transform: translateY(-100%);
-}
-
 .product-image {
   display: block;
   max-width: 100%;
@@ -113,12 +122,6 @@
 .product-item {
   padding: 20px 24px;
   max-width: 370px;
-}
-
-.product .link {
-  text-decoration: none;
-
-  color: $mainTextColor;
 }
 
 .product-text {
@@ -136,3 +139,4 @@
 
   color: $secondaryTextColor;
 }
+// cardsPortfolio
