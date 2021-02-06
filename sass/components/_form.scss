@@ -1,8 +1,4 @@
-.footer-form {
-  display: block;
-  margin-left: 93px;
-  width: 570px;
-}
+// formFooter
 .form-in-footer {
   display: flex;
   justify-content: space-between;
@@ -21,11 +17,13 @@
   filter: drop-shadow($shadowColor);
   background-color: transparent;
   border-radius: 4px;
-}
 
-.input-footer::placeholder {
-  color: $contactsTextColor;
+  &::placeholder {
+    color: $contactsTextColor;
+  }
 }
+// formFooter
+// formModal
 
 .modal-form {
   display: flex;
@@ -39,10 +37,14 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: $secondaryTextColor;
-}
 
-.modal-label:nth-child(-n + 3) {
-  margin-bottom: 10px;
+  &:nth-child(-n + 3) {
+    margin-bottom: 10px;
+  }
+
+  &:focus-within svg {
+    fill: $accentColor;
+  }
 }
 
 .input-wrap {
@@ -61,6 +63,17 @@
   border-radius: 4px;
   cursor: pointer;
   transition: border-color $smoothTransition;
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    border: 1px solid $accentColor;
+  }
+
+  &:hover ~ .icon-input svg,
+  &:focus ~ .icon-input svg {
+    fill: $accentColor;
+  }
 }
 
 .icon-input svg {
@@ -87,28 +100,16 @@
   border-radius: 4px;
   cursor: pointer;
   transition: border-color $smoothTransition;
+
+  &::placeholder {
+    color: $placeholderColor;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    border: 1px solid $accentColor;
+  }
 }
 
-.modal-textarea::placeholder {
-  color: $placeholderColor;
-}
-
-.modal-label:focus-within svg {
-  fill: $accentColor;
-}
-
-.modal-input:focus-within,
-.modal-textarea:focus-within {
-  border: 1px solid $accentColor;
-}
-
-.modal-input:hover,
-.modal-input:focus,
-.modal-textarea:hover,
-.modal-textarea:focus {
-  border: 1px solid $accentColor;
-}
-.modal-input:hover ~ .icon-input svg,
-.modal-input:focus ~ .icon-input svg {
-  fill: $accentColor;
-}
+// formModal

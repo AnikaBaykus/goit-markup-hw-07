@@ -8,11 +8,10 @@
   height: 100%;
 
   background-color: $backdropColor;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .modal {
@@ -54,15 +53,16 @@
   background-color: $pageColor;
   fill: $accentSecondaryColor;
   transition: fill $smoothTransition;
-}
-.icon-off svg {
-  width: 11px;
-  height: 11px;
-}
 
-.icon-off:hover,
-.icon-off:focus {
-  fill: $accentColor;
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
+
+  svg {
+    width: 11px;
+    height: 11px;
+  }
 }
 
 .btn-in-modal {
