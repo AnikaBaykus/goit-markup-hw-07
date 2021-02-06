@@ -1,0 +1,21 @@
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  color: $accentColor;
+}
+
+.logo .dark {
+  color: $accentSecondaryColor;
+}
+
+.logo .light {
+  color: $pageColor;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
